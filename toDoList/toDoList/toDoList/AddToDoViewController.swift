@@ -10,8 +10,8 @@ import UIKit
 class AddToDoViewController: UIViewController {
     var previousToDoTVC = ToDoTableViewController()
     @IBOutlet weak var descriptionInput: UITextField!
-    
     @IBOutlet weak var switchInput: UISwitch!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +25,10 @@ class AddToDoViewController: UIViewController {
             newToDo.description = checkForInput
             newToDo.important = switchInput.isOn
         }
+        
+        previousToDoTVC.listOfToDo.append(newToDo)
+        previousToDoTVC.tableView.reloadData()
+        navigationController?.popViewController(animated: true)
     }
     
     /*

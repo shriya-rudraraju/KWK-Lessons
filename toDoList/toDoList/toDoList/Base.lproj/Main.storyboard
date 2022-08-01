@@ -40,10 +40,44 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="MLY-3t-uhb" kind="show" id="A0p-5J-LpT"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNt-fW-V0A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2255.072463768116" y="83.705357142857139"/>
+        </scene>
+        <!--Completed To Do View Controller-->
+        <scene sceneID="cQ9-aF-7lq">
+            <objects>
+                <viewController id="MLY-3t-uhb" customClass="CompletedToDoViewController" customModule="toDoList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dFM-CN-8Fu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ToDo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZp-uk-o3u">
+                                <rect key="frame" x="158" y="149" width="61" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9AJ-F5-rQ9">
+                                <rect key="frame" x="126" y="218" width="87" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Complete"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eFv-uh-GRJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mzL-Cv-TyI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjN-cx-wvV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2253.6231884057975" y="917.41071428571422"/>
         </scene>
         <!--AddToDoViewController-->
         <scene sceneID="fbx-Hq-INj">
