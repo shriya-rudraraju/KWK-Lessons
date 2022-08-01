@@ -75,6 +75,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Add"/>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="5tA-L4-JNi" eventType="touchUpInside" id="jCF-Dx-l19"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Important:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAa-cj-pVJ">
                                 <rect key="frame" x="164" y="373" width="79" height="21"/>
@@ -88,6 +91,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="PIJ-5b-9bc"/>
+                    <connections>
+                        <outlet property="descriptionInput" destination="kMy-rD-LtS" id="7nU-Ya-wpL"/>
+                        <outlet property="switchInput" destination="PTq-Uq-4CZ" id="dYI-tN-9vj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCu-3V-OhQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
