@@ -15,20 +15,58 @@ class ViewController3: UIViewController {
     
     @IBOutlet weak var zipTextField: UITextField!
     
+    @IBOutlet weak var supportTextField: UITextField!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var zipCodeLabel: UILabel!
+    @IBOutlet weak var supportLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func learnMoreButton(_ sender: UIButton) {
         UIApplication.shared.open(URL(string:"https://www.congress.gov/")! as URL, options: [:], completionHandler: nil)
     }
-    /*
-    @IBAction func emailLink(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string:"https://mail.google.com/mail/u/0/?fs=1&tf=cm")! as URL, options: [:], completionHandler: nil)
-    }
+    
+    
+    @IBAction func submitButton(_ sender: UIButton) {
+    if let nameMiddle = nameTextField.text{
+            userInfo.name = nameMiddle
+           
+        }
+     if let ageMiddle = ageTextField.text{
+            userInfo.age = ageMiddle
+            //print(ageMiddle)
+            //print(ViewController3.age)
+        }
+        if let zipCodeMiddle = zipTextField.text {
+            userInfo.zipCode = zipCodeMiddle
+            //print(zipCodeMiddle)
+            //print (ViewController3.zipCode)
+        }
+        if let supportMiddle = supportTextField.text{
+            if supportMiddle.lowercased() == "yes" {
+                userInfo.support = "support"
+            }
+            else {
+                userInfo.support = "concern"
+            }
+            //print(supportMiddle)
+            //print(ViewController3.support)
+        }
+       
+        /*
+        age = ageTextField.text
+        zipCode = zipTextField.text
+        support = supportTextField.text
      */
+        
+    }
     
     /*
     // MARK: - Navigation

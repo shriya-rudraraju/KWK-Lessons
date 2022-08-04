@@ -9,13 +9,32 @@ import UIKit
 
 class ViewController4: UIViewController {
 
+    @IBOutlet weak var finalDraftLabel: UILabel!
+    
+    
     override func viewDidLoad() {
+        
+        finalDraftLabel.isHidden = true
+        
+        finalDraftLabel.text = "Hello,\n My name \(userInfo.name) and I am \(userInfo.age) years old. I live in \(userInfo.zipCode) and I am writing to express my \(userInfo.support) regarding the following bill: \n Sincerely, \(userInfo.name)"
+        print(userInfo.name)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func viewFinalDraft(_ sender: UIButton) {
+        finalDraftLabel.isHidden = false
+    finalDraftLabel.text = "Hello,\n My name \(userInfo.name) and I am \(userInfo.age) years old. I live in \(userInfo.zipCode) and I am writing to express my \(userInfo.support) regarding the following bill: \n Sincerely, \(userInfo.name)"
+        print(userInfo.name)
+        print(userInfo.name)
+    }
+    
+    
+    @IBAction func sendButton(_ sender: UIButton) {
+    }
+    
+    
     /*
     // MARK: - Navigation
 

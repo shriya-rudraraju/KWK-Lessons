@@ -22,6 +22,7 @@
 		BDEFCF6C289AEBDC00C2DCC8 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEFCF6B289AEBDC00C2DCC8 /* ViewController3.swift */; };
 		BDEFCF6E289AF98100C2DCC8 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEFCF6D289AF98100C2DCC8 /* ViewController4.swift */; };
 		BDEFCF70289AFB2100C2DCC8 /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEFCF6F289AFB2100C2DCC8 /* ViewController5.swift */; };
+		BDEFCF72289C189900C2DCC8 /* userInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEFCF71289C189900C2DCC8 /* userInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		BDEFCF6B289AEBDC00C2DCC8 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		BDEFCF6D289AF98100C2DCC8 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		BDEFCF6F289AFB2100C2DCC8 /* ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
+		BDEFCF71289C189900C2DCC8 /* userInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				BDEFCF6F289AFB2100C2DCC8 /* ViewController5.swift */,
 				BDEFCF6B289AEBDC00C2DCC8 /* ViewController3.swift */,
+				BDEFCF71289C189900C2DCC8 /* userInfo.swift */,
 				BDEFCF69289AEBAA00C2DCC8 /* ViewController2.swift */,
 				BDEFCF6D289AF98100C2DCC8 /* ViewController4.swift */,
 				BD60D28F28986F7300B18173 /* hearMyVoice */,
@@ -284,6 +287,7 @@
 				BD60D29128986F7300B18173 /* AppDelegate.swift in Sources */,
 				BD60D29328986F7300B18173 /* SceneDelegate.swift in Sources */,
 				BDEFCF6C289AEBDC00C2DCC8 /* ViewController3.swift in Sources */,
+				BDEFCF72289C189900C2DCC8 /* userInfo.swift in Sources */,
 				BDEFCF6A289AEBAA00C2DCC8 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
